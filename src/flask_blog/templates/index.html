@@ -1,0 +1,21 @@
+{%extends 'layout.html'%}
+
+{%block content%}
+
+<div class="container">
+    <span class="bg-white mr-5">Name : </span>
+    <p class="text-center  text-white d-inline-block text-black bg-warning">{{name}}</p>
+    <br>
+    <span class="bg-white mr-5">Country : </span>
+    <p class="text-center  text-white d-inline-block text-black bg-warning">{{country}}</p>
+    <br>
+    <span class="bg-white mr-5">Email : </span>
+    <p class="text-center  text-white d-inline-block text-black bg-warning">{{email}}</p>
+    <br>
+    <span class="bg-white mr-5">Hobbies : </span>
+    <p class="text-center  text-white d-inline-block text-black bg-warning">{{hobbies}}</p>
+    <br>
+    <a href="{{url_for('update')}}" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Update Profile link</a>
+
+</div>
+{%endblock content%}

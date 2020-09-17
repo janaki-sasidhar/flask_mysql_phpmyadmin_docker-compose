@@ -1,0 +1,25 @@
+{%extends 'layout.html'%}
+{%block content%}
+<div class="container">
+<form action="" method="post">
+          {{ form.hidden_tag() }}
+  <div class="form-group">
+    {{ form.name.label(class="form-control w-100 bg-info d-inline text-white") }}
+    {{form.name(class="form-control form-control-lg")}}
+  </div>
+    <div class="form-group">
+    {{ form.country.label(class="form-control w-100 bg-info d-inline text-white") }}
+    {{form.country(class="form-control form-control-lg")}}
+  </div>
+    <div class="form-group">
+    {{ form.email.label(class="form-control w-100 bg-info d-inline text-white") }}
+    {{form.email(class="form-control form-control-lg")}}
+  </div>
+    <div class="form-group">
+    {{ form.hobbies.label(class="form-control w-100 bg-info d-inline text-white") }}
+    {{form.hobbies(class="form-control form-control-lg")}}
+  </div>
+    {{ form.submit(class="btn btn-success") }}
+</form>
+</div>
+{%endblock content%}
